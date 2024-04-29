@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compensation Responsibilities</title>
+</head>
+<body>
+  <h1>Compensation Responsibilities</h1>
+
+  <label for="responsibilities">Select a responsibility:</label>
+  <select id="responsibilities" onchange="showResponse()">
+    <option value="" disabled selected>Select an option</option>
+    <option value="1">Promote an understanding of compensation philosophy, practices and administration across all levels of the organization</option>
+    <option value="2">Build strong partnerships with Talent Acquisition and People Business Partners to attract and retain top talent</option>
+    <option value="3">Assist the team in administering various programs such as annual compensation review, promotion cycles, bonus program, etc.</option>
+    <option value="4">Demonstrate ownership to drive compensation programs within client groups and serve as a trusted adviser and business partner</option>
+    <option value="5">Work closely with the team to maintain GitLab’s global job architecture and ensure it meets the needs of the business</option>
+    <option value="6">Analyze trends and metrics in partnership with the People team to develop solutions, programs and policies</option>
+    <option value="7">Develop and deploy training materials to promote an understanding of compensation philosophies, practices and administration across all levels of the organization</option>
+    <option value="8">Provide education regarding equity plans at GitLab in collaboration with Stock Administration to ensure team members understand the potential value of their equity</option>
+    <option value="9">Support the team in preparation of Compensation and Leadership Development Committee meetings</option>
+    <option value="10">Ensure compliance with all international rules and regulations (we operate in 60+ countries)</option>
+  </select>
+
+  <p id="response"></p>
+
+  <script>
+    function showResponse() {
+      var select = document.getElementById("responsibilities");
+      var response = document.getElementById("response");
+
+      switch (select.value) {
+        case "1":
+          response.innerText = "Throughout my career I have been tasked with helping organizations understand Total Rewards philosophies and practices. I regularly create resources and conduct trainings that reach all employees and leaders in the organization.";
+          break;
+        case "2":
+          response.innerText = "As a Compensation PARTNER, creating a strong partnership with my internal People Group peers is my strongest priority. Based on my previous experience, I have found that the employee experience is best when the People Group shows up together and in alignment.";
+          break;
+        case "3":
+          response.innerText = "I always take a lead role in designing and administering annual compensation programs. I have done this at Forever 21, Activision, and at Zoom... sometimes well past midnight. Beyond administering the various plans, I recommend strategic design changes that help the program run more effectively so our leaders can get back to leading.";
+          break;
+        case "4":
+          response.innerText = "In my most recent Compensation role I was solely responsible for working directly with the entire Engineering and Technology organization. This includes over 4,000 in Engineering, Product, Data Security, AI and Machine Learning, and IT roles -- this group has unique skills and therefore unique needs, and I am comfortable lending my expertise to them.";
+          break;
+        case "5":
+          response.innerText = "When I joined Zoom in 2020 there was no job architecture AT ALL. I helped to establish our job categories, job levels, career tracks, job family groups, and job functions, and continue to iterate on that to suit the needs of the business.";
+          break;
+        case "6":
+          response.innerText = "Compensation programs work best when they can be flexible and responsive to market conditions. I am used to analyzing data and making tweaks as appropriate to help the business accomplish their goals.";
+          break;
+        case "7":
+          response.innerText = "I am very adept at taking complex ideas and simplifying them for employees.";
+          break;
+        case "8":
+          response.innerText = "I have been in environments where employees value cash, and undervalue equity. I have created campaigns in partnership with Stock Admin and eTrade to help employees understand their equity awards, and have seen favorable results.";
+          break;
+        case "9":
+          response.innerText = "I regularly help prepare meeting materials and contribute to annual proxy filings.";
+          break;
+        case "10":
+          response.innerText = "I am a certified Global Remuneration Professional with WorldatWork, and have experience supporting EMEA and APAC. Given my background supporting technical roles, I am very familiar with the India and Singapore markets.";
+          break;
+        default:
+          response.innerText = "";
+      }
+    }
+  </script>
+</body>
+</html>
